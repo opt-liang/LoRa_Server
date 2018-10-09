@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\NetworkServer\AddressAllocator.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\cmac.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DebugMonitor.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\JsonParser.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\JsonReceive.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="MoteTransmitController.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetworkServer\OptionController.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SqlDb.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UdpSocket.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Utilities.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="JoinControllerNS.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonReceiveNS.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalDataNS.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="MainNS.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="MoteNS.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Thread-Windows.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\aes.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LoRaNS.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\JsonCommand.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="AddressRange.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CommandLineInterface.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetworkServer\TransmitQueue.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TransmissionRecord.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TimeRecord.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LoRa.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CommandParser.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandParserNS.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\IpSocket.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\IpSocketSet.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TcpSocket.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TcpConnectionManager.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LoRaDatabaseNS.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LoRaUtility.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LoRaCypher.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LoRaDatabase.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Application.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DummyFunctionsNS.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="BestGateway.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\JsonGenerate.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalFunctionsNS.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ConfiguredValue.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameReception.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LoRaApplicationDatabase.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CommandParserAppMethods.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Service.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LoRaApplicationDatabaseInterface.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CommandParserMethods.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\JsonReceiveIp.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TcpTextSocketConnectionManager.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\JsonString.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ValueWithValidity.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ServerThreadFunctions.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GlobalData.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Semaphore.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CommandParserUsingGlobalData.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayNS.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\WordStore.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ConfiguredValueLoRa.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Version\BuildVersion.cpp">
+      <Filter>Version</Filter>
+    </ClCompile>
+    <ClCompile Include="LoRaDatabaseInterfaceNS.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayMessageProtocol.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayMessageProtocolReceive.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayMessageProtocolReceiveNS.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TimeFunctions.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Position.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ApplicationServer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitingFrame.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LoRaRegion.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GlobalFunctions.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LoRaRegionNS.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\NetworkServer\AddressAllocator.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\aes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BinarySearchVector.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BinarySearchVectorNonVolatile.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BuildVersion.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\cmac.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DataRecord.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DebugMonitor.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ExceptionClass.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\InputError.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\JsonParser.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\JsonReceive.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LoRa.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetworkServer\OptionController.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SqlDb.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NetworkServer\TransmitQueue.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Utilities.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ValueWithValidity.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="JoinControllerNS.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonReceiveNS.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="MoteTransmitController.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalDataNS.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="MoteNS.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Eui.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\General.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Mutex.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Thread.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="AddressRange.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CommandLineInterface.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TransmissionRecord.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TimeRecord.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CommandParser.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Ip.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandParserNS.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\JsonCommand.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\IpSocket.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UdpSocket.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\IpSocket.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\IpSocketSet.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TcpSocket.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\JsonTcpSocket.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TcpConnectionManager.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BinarySearchVectorNV.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\JsonString.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MessageAddress.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BinarySearchVectorDebug.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BinarySearchVectorNVDebug.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LoRaDatabaseNS.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LoRaDatabase.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LoRaIpPorts.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Application.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MutexDebug.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BestGateway.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LoRaReceiveFrame.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\JsonGenerate.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\JsonException.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ConfiguredValue.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ListNV.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameReception.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LoRaApplicationDatabase.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Service.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TcpTextSocket.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TcpTextSocketConnectionManager.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TcpConnectionAddressController.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ServerThreadFunctions.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GlobalData.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Queue.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Semaphore.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsolidatedPosition.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Position.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewayNS.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\WordStore.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ConfiguredValueLoRa.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\List.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewayStatus.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewayMessageProtocol.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TimeFunctions.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ApplicationServer.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitingFrame.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LoRaRegion.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TimedQueueTemplate.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{a34f4daa-59bb-4fd7-9e50-d17a4e4b3fa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Version">
+      <UniqueIdentifier>{72dc610a-8e50-40a5-987b-060734eaf6cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{5689be5a-a47d-4ec1-845b-3c5f7026b0b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

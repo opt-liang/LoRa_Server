@@ -1,0 +1,48 @@
+/* Generated from file: ApplicationServer.vcxproj */
+/*  */
+
+/*Fixed data */
+
+..\Common\aes.c                //  85: Include = "..\Common\aes.c" 
+..\Common\cmac.c               //  86: Include = "..\Common\cmac.c" 
+..\Common\CommandLineInterface.cpp
+                               //  87: Include = "..\Common\CommandLineInterface.cpp" 
+..\Common\CommandParser.cpp    //  88: Include = "..\Common\CommandParser.cpp" 
+..\Common\DebugMonitor.cpp     //  89: Include = "..\Common\DebugMonitor.cpp" 
+..\Common\IpSocket.cpp         //  90: Include = "..\Common\IpSocket.cpp" 
+..\Common\IpSocketSet.cpp      //  91: Include = "..\Common\IpSocketSet.cpp" 
+..\Common\JsonAwareTcpConnectionManager.cpp
+                               //  92: Include = "..\Common\JsonAwareTcpConnectionManager.cpp" 
+..\Common\JsonCommand.cpp      //  93: Include = "..\Common\JsonCommand.cpp" 
+..\Common\JsonParser.cpp       //  94: Include = "..\Common\JsonParser.cpp" 
+..\Common\JsonReceive.cpp      //  95: Include = "..\Common\JsonReceive.cpp" 
+..\Common\LoRa.cpp             //  96: Include = "..\Common\LoRa.cpp" 
+..\Common\LoRaCypher.cpp       //  97: Include = "..\Common\LoRaCypher.cpp" 
+..\Common\LoRaDatabase.cpp     //  98: Include = "..\Common\LoRaDatabase.cpp" 
+..\Common\LoRaUtility.cpp      //  99: Include = "..\Common\LoRaUtility.cpp" 
+..\Common\Maths.cpp            // 100: Include = "..\Common\Maths.cpp" 
+..\Common\Semaphore.cpp        // 101: Include = "..\Common\Semaphore.cpp" 
+..\Common\SqlDb.cpp            // 102: Include = "..\Common\SqlDb.cpp" 
+..\Common\TcpConnectionManager.cpp
+                               // 103: Include = "..\Common\TcpConnectionManager.cpp" 
+..\Common\TcpSocket.cpp        // 104: Include = "..\Common\TcpSocket.cpp" 
+..\Common\Thread-Windows.cpp   // 105: Include = "..\Common\Thread-Windows.cpp" 
+..\Common\TimeRecord.cpp       // 106: Include = "..\Common\TimeRecord.cpp" 
+..\Common\TransmissionRecord.cpp
+                               // 107: Include = "..\Common\TransmissionRecord.cpp" 
+..\Common\UdpSocket.cpp        // 108: Include = "..\Common\UdpSocket.cpp" 
+..\Common\Utilities.cpp        // 109: Include = "..\Common\Utilities.cpp" 
+..\Version\BuildVersion.cpp    // 110: Include = "..\Version\BuildVersion.cpp" 
+CommandLineInterfaceAS.cpp     // 111: Include = "CommandLineInterfaceAS.cpp" 
+CommandParserAS.cpp            // 112: Include = "CommandParserAS.cpp" 
+GlobalDataAS.cpp               // 113: Include = "GlobalDataAS.cpp" 
+JoinControllerAS.cpp           // 114: Include = "JoinControllerAS.cpp" 
+JsonReceiveAS.cpp              // 115: Include = "JsonReceiveAS.cpp" 
+JsonTransmitAS.cpp             // 116: Include = "JsonTransmitAS.cpp" 
+LoRaDatabaseAS.cpp             // 117: Include = "LoRaDatabaseAS.cpp" 
+LoRaDatabaseCS.cpp             // 118: Include = "LoRaDatabaseCS.cpp" 
+LoRaDatabaseInterfaceCS.cpp    // 119: Include = "LoRaDatabaseInterfaceCS.cpp" 
+MainAS.cpp                     // 120: Include = "MainAS.cpp" 
+CustomerApplication.cpp        // 121: Include = "CustomerApplication.cpp" 
+LoRaDatabaseInterfaceAS.cpp    // 122: Include = "LoRaDatabaseInterfaceAS.cpp" 
+MoteAS.cpp                     // 123: Include = "MoteAS.cpp" 

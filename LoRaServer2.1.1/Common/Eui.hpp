@@ -1,0 +1,21 @@
+/* © 2015 Semtech Corporation, 200 Flynn Road, Camarillo, CA 93012 U.S.A. All rights reserved.
+The copyright of this file is owned by Semtech Corporation (Semtech). This is an unpublished work.  The content of this file must be used only for the purpose for which it was  supplied by Semtech or its distributors. The content of this file must not be copied or disclosed unless authorized in writing by Semtech.  */
+
+#ifndef EUI_HPP
+#define EUI_HPP
+
+#include "General.h"
+#include "ValueWithValidity.hpp"
+
+typedef uint64 EuiType;
+//invalid values are all ones
+const EuiType invalidEui = ~EuiType(0);
+const EuiType nullEui = EuiType(0);
+const uint8 euiBytes = sizeof(EuiType);
+
+const uint64 invalidTime = ~uint64(0);
+
+
+typedef ValidValueUint64 ValidValueEuiType;
+
+#endif

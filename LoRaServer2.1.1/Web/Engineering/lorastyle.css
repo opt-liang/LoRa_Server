@@ -1,0 +1,35 @@
+
+
+
+h1,h2{
+font-family:verdana, arail, Helvetica, sans-serif;
+color:#184949;
+}
+h1{
+font-size:30px;
+}
+h2{
+font-size:20px;
+}
+
+.headerArea{
+width:100%;
+top:0px;
+position:fixed;
+background-color:#ffffff;
+z-index:1;
+}
+.content{
+width:95%;
+top:130px;
+position:absolute;
+font-family:verdana, arail, Helvetica, sans-serif;
+}
+
+.datatable
+{
+	border-collapse:collapse;
+	border: 1px solid black;
+	text-align:center;
+	vertical-align:center;
+}

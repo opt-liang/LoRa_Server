@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2FD4FB1E-4AC4-4D0F-8D18-2A425548D6EE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Console</RootNamespace>
+    <ProjectName>Console</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>C:\run\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>c:\run\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1;CRYPTOPP_MANUALLY_INSTANTIATE_TEMPLATES;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\NetworkServer</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1;CRYPTOPP_MANUALLY_INSTANTIATE_TEMPLATES;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;..\NetworkServer</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\DebugMonitor.cpp" />
+    <ClCompile Include="..\Common\IpSocket.cpp" />
+    <ClCompile Include="..\Common\JsonCommand.cpp" />
+    <ClCompile Include="..\Common\JsonParser.cpp" />
+    <ClCompile Include="..\Common\LoRa.cpp" />
+    <ClCompile Include="..\Common\LoRaUtility.cpp" />
+    <ClCompile Include="..\Common\Thread-Windows.cpp" />
+    <ClCompile Include="..\Common\TimeFunctions.cpp" />
+    <ClCompile Include="..\Common\TimeRecord.cpp" />
+    <ClCompile Include="..\Common\TransmissionRecord.cpp" />
+    <ClCompile Include="..\Common\UdpSocket.cpp" />
+    <ClCompile Include="..\Common\Utilities.cpp" />
+    <ClCompile Include="..\Common\ValueWithValidity.cpp" />
+    <ClCompile Include="..\Common\WordStore.cpp" />
+    <ClCompile Include="DummyFunctionsCC.cpp" />
+    <ClCompile Include="MainCC.cpp" />
+    <ClCompile Include="PendingAcknowledgeQueue.cpp" />
+    <ClCompile Include="ServerAddressController.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\BinarySearchVector.hpp" />
+    <ClInclude Include="..\Common\CommandLineInterface.hpp" />
+    <ClInclude Include="..\Common\DataRecord.hpp" />
+    <ClInclude Include="..\Common\DebugMonitor.hpp" />
+    <ClInclude Include="..\Common\Eui.hpp" />
+    <ClInclude Include="..\Common\ExceptionClass.hpp" />
+    <ClInclude Include="..\Common\General.h" />
+    <ClInclude Include="..\Common\InputError.hpp" />
+    <ClInclude Include="..\Common\Ip.h" />
+    <ClInclude Include="..\Common\IpSocket.hpp" />
+    <ClInclude Include="..\Common\IpSocketSet.hpp" />
+    <ClInclude Include="..\Common\JsonCommand.hpp" />
+    <ClInclude Include="..\Common\JsonException.hpp" />
+    <ClInclude Include="..\Common\JsonGenerate.hpp" />
+    <ClInclude Include="..\Common\JsonParser.hpp" />
+    <ClInclude Include="..\Common\JsonReceive.hpp" />
+    <ClInclude Include="..\Common\JsonString.hpp" />
+    <ClInclude Include="..\Common\LoRa.hpp" />
+    <ClInclude Include="..\Common\LoRaIpPorts.hpp" />
+    <ClInclude Include="..\Common\LoRaReceiveFrame.hpp" />
+    <ClInclude Include="..\Common\MessageAddress.hpp" />
+    <ClInclude Include="..\Common\Mutex.hpp" />
+    <ClInclude Include="..\Common\TcpConnectionManager.hpp" />
+    <ClInclude Include="..\Common\TcpSocket.hpp" />
+    <ClInclude Include="..\Common\Thread.hpp" />
+    <ClInclude Include="..\Common\TimeFunctions.hpp" />
+    <ClInclude Include="..\Common\TimeRecord.hpp" />
+    <ClInclude Include="..\Common\TransmissionRecord.hpp" />
+    <ClInclude Include="..\Common\UdpSocket.hpp" />
+    <ClInclude Include="..\Common\Utilities.hpp" />
+    <ClInclude Include="..\Common\ValueWithValidity.hpp" />
+    <ClInclude Include="..\Common\WordStore.hpp" />
+    <ClInclude Include="PendingAcknowledgeQueue.hpp" />
+    <ClInclude Include="ServerAddressController.hpp" />
+    <ClInclude Include="ServerAddressControllerCC.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

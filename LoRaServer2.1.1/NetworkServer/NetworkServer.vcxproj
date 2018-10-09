@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9B7B6AE4-E19E-4556-BC6E-0BB85E2DEBBE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Server</RootNamespace>
+    <ProjectName>NetworkServer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>C:\run\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;BUILD_VERSION="99.98.Dummy";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);CRYPTOPP_MANUALLY_INSTANTIATE_TEMPLATES;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Common;C:\xampp\mysql\include\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libmysql.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\xampp\mysql\lib;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;BUILD_VERSION="2.1.1";X_DEBUG;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT=1;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);CRYPTOPP_MANUALLY_INSTANTIATE_TEMPLATES;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\common;C:\xampp\mysql\include\</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libmysql.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\xampp\mysql\lib;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\aes.c" />
+    <ClCompile Include="..\Common\Application.cpp" />
+    <ClCompile Include="..\Common\ApplicationServer.cpp" />
+    <ClCompile Include="..\Common\cmac.c" />
+    <ClCompile Include="..\Common\CommandLineInterface.cpp" />
+    <ClCompile Include="..\Common\CommandParser.cpp" />
+    <ClCompile Include="..\Common\CommandParserAppMethods.cpp" />
+    <ClCompile Include="..\Common\CommandParserMethods.cpp" />
+    <ClCompile Include="..\Common\CommandParserUsingGlobalData.cpp" />
+    <ClCompile Include="..\Common\ConfiguredValue.cpp" />
+    <ClCompile Include="..\Common\ConfiguredValueLoRa.cpp" />
+    <ClCompile Include="..\Common\DebugMonitor.cpp" />
+    <ClCompile Include="..\Common\GlobalData.cpp" />
+    <ClCompile Include="..\Common\GlobalFunctions.cpp" />
+    <ClCompile Include="..\Common\IpSocket.cpp" />
+    <ClCompile Include="..\Common\LoRaRegion.cpp" />
+    <ClCompile Include="..\Common\Position.cpp" />
+    <ClCompile Include="..\Common\Semaphore.cpp" />
+    <ClCompile Include="..\Common\ServerThreadFunctions.cpp" />
+    <ClCompile Include="..\Common\TcpTextSocketConnectionManager.cpp" />
+    <ClCompile Include="..\Common\JsonCommand.cpp" />
+    <ClCompile Include="..\Common\JsonGenerate.cpp" />
+    <ClCompile Include="..\Common\JsonParser.cpp" />
+    <ClCompile Include="..\Common\JsonReceive.cpp" />
+    <ClCompile Include="..\Common\JsonReceiveIp.cpp" />
+    <ClCompile Include="..\Common\JsonString.cpp" />
+    <ClCompile Include="..\Common\LoRaApplicationDatabase.cpp" />
+    <ClCompile Include="..\Common\LoRaApplicationDatabaseInterface.cpp" />
+    <ClCompile Include="..\Common\LoRaCypher.cpp" />
+    <ClCompile Include="..\Common\LoRaUtility.cpp" />
+    <ClCompile Include="..\Common\LoRa.cpp" />
+    <ClCompile Include="..\Common\LoRaDatabase.cpp" />
+    <ClCompile Include="..\Common\Service.cpp" />
+    <ClCompile Include="..\Common\SqlDb.cpp" />
+    <ClCompile Include="..\Common\TcpConnectionManager.cpp" />
+    <ClCompile Include="..\Common\TcpSocket.cpp" />
+    <ClCompile Include="..\Common\Thread-Windows.cpp" />
+    <ClCompile Include="..\Common\TimeFunctions.cpp" />
+    <ClCompile Include="..\Common\TimeRecord.cpp" />
+    <ClCompile Include="..\Common\TransmissionRecord.cpp" />
+    <ClCompile Include="..\Common\UdpSocket.cpp" />
+    <ClCompile Include="..\Common\IpSocketSet.cpp" />
+    <ClCompile Include="..\Common\Utilities.cpp" />
+    <ClCompile Include="..\Common\ValueWithValidity.cpp" />
+    <ClCompile Include="..\Common\WordStore.cpp" />
+    <ClCompile Include="..\NetworkServer\AddressAllocator.cpp" />
+    <ClCompile Include="..\Version\BuildVersion.cpp" />
+    <ClCompile Include="BestGateway.cpp" />
+    <ClCompile Include="GatewayMessageProtocol.cpp" />
+    <ClCompile Include="GatewayNS.cpp" />
+    <ClCompile Include="AddressRange.cpp" />
+    <ClCompile Include="CommandParserNS.cpp" />
+    <ClCompile Include="DummyFunctionsNS.cpp" />
+    <ClCompile Include="FrameReception.cpp" />
+    <ClCompile Include="GlobalFunctionsNS.cpp" />
+    <ClCompile Include="JoinControllerNS.cpp" />
+    <ClCompile Include="JsonReceiveNS.cpp" />
+    <ClCompile Include="LoRaDatabaseNS.cpp" />
+    <ClCompile Include="LoRaDatabaseInterfaceNS.cpp" />
+    <ClCompile Include="..\NetworkServer\OptionController.cpp" />
+    <ClCompile Include="..\NetworkServer\TransmitQueue.cpp" />
+    <ClCompile Include="LoRaNS.cpp" />
+    <ClCompile Include="GatewayMessageProtocolReceive.cpp" />
+    <ClCompile Include="GatewayMessageProtocolReceiveNS.cpp" />
+    <ClCompile Include="LoRaRegionNS.cpp" />
+    <ClCompile Include="MoteNS.cpp" />
+    <ClCompile Include="MoteTransmitController.cpp" />
+    <ClCompile Include="GlobalDataNS.cpp" />
+    <ClCompile Include="MainNS.cpp" />
+    <ClCompile Include="WaitingFrame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\aes.h" />
+    <ClInclude Include="..\Common\Application.hpp" />
+    <ClInclude Include="..\Common\ApplicationServer.hpp" />
+    <ClInclude Include="..\Common\BinarySearchVector.hpp" />
+    <ClInclude Include="..\Common\BinarySearchVectorDebug.hpp" />
+    <ClInclude Include="..\Common\BinarySearchVectorNonVolatile.hpp" />
+    <ClInclude Include="..\Common\BinarySearchVectorNV.hpp" />
+    <ClInclude Include="..\Common\BinarySearchVectorNVDebug.hpp" />
+    <ClInclude Include="..\Common\BuildVersion.hpp" />
+    <ClInclude Include="..\Common\cmac.h" />
+    <ClInclude Include="..\Common\CommandLineInterface.hpp" />
+    <ClInclude Include="..\Common\CommandParser.hpp" />
+    <ClInclude Include="..\Common\ConfiguredValue.hpp" />
+    <ClInclude Include="..\Common\ConfiguredValueLoRa.hpp" />
+    <ClInclude Include="..\Common\DataRecord.hpp" />
+    <ClInclude Include="..\Common\DebugMonitor.hpp" />
+    <ClInclude Include="..\Common\ExceptionClass.hpp" />
+    <ClInclude Include="..\Common\General.h" />
+    <ClInclude Include="..\Common\GlobalData.hpp" />
+    <ClInclude Include="..\Common\InputError.hpp" />
+    <ClInclude Include="..\Common\Ip.h" />
+    <ClInclude Include="..\Common\IpSocket.hpp" />
+    <ClInclude Include="..\Common\List.hpp" />
+    <ClInclude Include="..\Common\LoRaRegion.hpp" />
+    <ClInclude Include="..\Common\Position.hpp" />
+    <ClInclude Include="..\Common\Queue.hpp" />
+    <ClInclude Include="..\Common\Semaphore.hpp" />
+    <ClInclude Include="..\Common\ServerThreadFunctions.hpp" />
+    <ClInclude Include="..\Common\TcpConnectionAddressController.hpp" />
+    <ClInclude Include="..\Common\TcpTextSocketConnectionManager.hpp" />
+    <ClInclude Include="..\Common\TcpTextSocket.hpp" />
+    <ClInclude Include="..\Common\JsonException.hpp" />
+    <ClInclude Include="..\Common\JsonGenerate.hpp" />
+    <ClInclude Include="..\Common\JsonString.hpp" />
+    <ClInclude Include="..\Common\JsonTcpSocket.hpp" />
+    <ClInclude Include="..\Common\ListNV.hpp" />
+    <ClInclude Include="..\Common\LoRaApplicationDatabase.hpp" />
+    <ClInclude Include="..\Common\LoRaIpPorts.hpp" />
+    <ClInclude Include="..\Common\LoRaReceiveFrame.hpp" />
+    <ClInclude Include="..\Common\MessageAddress.hpp" />
+    <ClInclude Include="..\Common\MutexDebug.hpp" />
+    <ClInclude Include="..\Common\Service.hpp" />
+    <ClInclude Include="..\Common\TcpConnectionManager.hpp" />
+    <ClInclude Include="..\Common\TcpSocket.hpp" />
+    <ClInclude Include="..\Common\TimedQueueTemplate.hpp" />
+    <ClInclude Include="..\Common\TimeFunctions.hpp" />
+    <ClInclude Include="..\Common\UdpSocket.hpp" />
+    <ClInclude Include="..\Common\JsonCommand.hpp" />
+    <ClInclude Include="..\Common\JsonParser.hpp" />
+    <ClInclude Include="..\Common\JsonReceive.hpp" />
+    <ClInclude Include="..\Common\LoRa.hpp" />
+    <ClInclude Include="..\Common\LoRaDatabase.hpp" />
+    <ClInclude Include="..\Common\Eui.hpp" />
+    <ClInclude Include="..\Common\Mutex.hpp" />
+    <ClInclude Include="..\Common\SqlDb.hpp" />
+    <ClInclude Include="..\Common\Thread.hpp" />
+    <ClInclude Include="..\Common\TimeRecord.hpp" />
+    <ClInclude Include="..\Common\TransmissionRecord.hpp" />
+    <ClInclude Include="..\Common\IpSocketSet.hpp" />
+    <ClInclude Include="..\Common\Utilities.hpp" />
+    <ClInclude Include="..\Common\ValueWithValidity.hpp" />
+    <ClInclude Include="..\Common\WordStore.hpp" />
+    <ClInclude Include="..\NetworkServer\AddressAllocator.hpp" />
+    <ClInclude Include="BestGateway.hpp" />
+    <ClInclude Include="GatewayMessageProtocol.hpp" />
+    <ClInclude Include="GatewayNS.hpp" />
+    <ClInclude Include="AddressRange.hpp" />
+    <ClInclude Include="CommandParserNS.hpp" />
+    <ClInclude Include="ConsolidatedPosition.hpp" />
+    <ClInclude Include="FrameReception.hpp" />
+    <ClInclude Include="GatewayStatus.hpp" />
+    <ClInclude Include="JoinControllerNS.hpp" />
+    <ClInclude Include="JsonReceiveNS.hpp" />
+    <ClInclude Include="LoRaDatabaseNS.hpp" />
+    <ClInclude Include="..\NetworkServer\OptionController.hpp" />
+    <ClInclude Include="..\NetworkServer\TransmitQueue.hpp" />
+    <ClInclude Include="MoteNS.hpp" />
+    <ClInclude Include="MoteTransmitController.hpp" />
+    <ClInclude Include="GlobalDataNS.hpp" />
+    <ClInclude Include="WaitingFrame.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

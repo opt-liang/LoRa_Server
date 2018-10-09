@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServerConnectivity", "ServerConnectivityTester\ServerConnectivityTester.vcxproj", "{977BD2DC-996E-4D79-8EC4-BF925DB434CE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ApplicationServer", "ApplicationServer\ApplicationServer.vcxproj", "{35E24DE3-80C4-4F16-BE68-DA93D04CEDB7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetworkServer", "NetworkServer\NetworkServer.vcxproj", "{9B7B6AE4-E19E-4556-BC6E-0BB85E2DEBBE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoRaCmd", "Console\Console.vcxproj", "{2FD4FB1E-4AC4-4D0F-8D18-2A425548D6EE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CustomerServer", "CustomerServer\CustomerServer.vcxproj", "{D106082D-54E9-47E9-8BCD-7CE748B211C6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetworkController", "NetworkController\NetworkController.vcxproj", "{F8543999-3DCD-4C5D-BCB7-6310DD3B48C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{977BD2DC-996E-4D79-8EC4-BF925DB434CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{977BD2DC-996E-4D79-8EC4-BF925DB434CE}.Debug|Win32.Build.0 = Debug|Win32
+		{977BD2DC-996E-4D79-8EC4-BF925DB434CE}.Release|Win32.ActiveCfg = Release|Win32
+		{977BD2DC-996E-4D79-8EC4-BF925DB434CE}.Release|Win32.Build.0 = Release|Win32
+		{35E24DE3-80C4-4F16-BE68-DA93D04CEDB7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{35E24DE3-80C4-4F16-BE68-DA93D04CEDB7}.Debug|Win32.Build.0 = Debug|Win32
+		{35E24DE3-80C4-4F16-BE68-DA93D04CEDB7}.Release|Win32.ActiveCfg = Release|Win32
+		{35E24DE3-80C4-4F16-BE68-DA93D04CEDB7}.Release|Win32.Build.0 = Release|Win32
+		{9B7B6AE4-E19E-4556-BC6E-0BB85E2DEBBE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9B7B6AE4-E19E-4556-BC6E-0BB85E2DEBBE}.Debug|Win32.Build.0 = Debug|Win32
+		{9B7B6AE4-E19E-4556-BC6E-0BB85E2DEBBE}.Release|Win32.ActiveCfg = Release|Win32
+		{9B7B6AE4-E19E-4556-BC6E-0BB85E2DEBBE}.Release|Win32.Build.0 = Release|Win32
+		{2FD4FB1E-4AC4-4D0F-8D18-2A425548D6EE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2FD4FB1E-4AC4-4D0F-8D18-2A425548D6EE}.Debug|Win32.Build.0 = Debug|Win32
+		{2FD4FB1E-4AC4-4D0F-8D18-2A425548D6EE}.Release|Win32.ActiveCfg = Release|Win32
+		{2FD4FB1E-4AC4-4D0F-8D18-2A425548D6EE}.Release|Win32.Build.0 = Release|Win32
+		{D106082D-54E9-47E9-8BCD-7CE748B211C6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D106082D-54E9-47E9-8BCD-7CE748B211C6}.Debug|Win32.Build.0 = Debug|Win32
+		{D106082D-54E9-47E9-8BCD-7CE748B211C6}.Release|Win32.ActiveCfg = Release|Win32
+		{D106082D-54E9-47E9-8BCD-7CE748B211C6}.Release|Win32.Build.0 = Release|Win32
+		{F8543999-3DCD-4C5D-BCB7-6310DD3B48C3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F8543999-3DCD-4C5D-BCB7-6310DD3B48C3}.Debug|Win32.Build.0 = Debug|Win32
+		{F8543999-3DCD-4C5D-BCB7-6310DD3B48C3}.Release|Win32.ActiveCfg = Release|Win32
+		{F8543999-3DCD-4C5D-BCB7-6310DD3B48C3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
